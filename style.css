@@ -1,0 +1,29 @@
+body {
+    background-color: #3d5245;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+.hello {
+    color: #000000;
+    font-size: 24px;
+    padding-top: 20px;
+}
+
+.welcome {
+    color: #214ee4;
+    font-size: 36px;
+    text-align: center;
+    padding: 50px 0;
+}
+.welcome::after {
+    content: "Welcome to the site!";
+    display: block;
+    font-size: 18px;
+    color: #6cbb2b;
+}
+.warning {
+    color: #ff0000;
+    font-size: 12px;
+    text-align: right
+}
