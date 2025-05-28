@@ -7,7 +7,7 @@ body {
 .hello {
     color: #000000;
     font-size: 24px;
-    padding-top: 20px;
+    /* padding-top: 20px; */
 }
 
 .welcome {
@@ -21,12 +21,6 @@ body {
     display: block;
     font-size: 18px;
     color: #6cbb2b;
-}
-.warning {
-    color: #ff0000;
-    font-size: 12px;
-    margin-left: 80px;
-    text-align: right
 }
 .cv {
     color: #000000;
@@ -53,4 +47,38 @@ body {
     display: block;
     border: 2px solid #000000;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  height: 45px;
+}
+
+.warning {
+    color: #ff0000;
+    font-size: 12px;
+    text-align: right;
+}
+
+.nav_li {
+  float: left;
+}
+
+.nav_li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.nav_li a:hover {
+  background-color: #111;
+}
+
+.active {
+  background-color: #04AA6D;
 }
