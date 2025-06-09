@@ -1,84 +1,35 @@
-body {
-    background-color: #3d5245;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 20px;
-}
-.hello {
-    color: #000000;
-    font-size: 24px;
-    /* padding-top: 20px; */
-}
-
-.welcome {
-    color: #214ee4;
-    font-size: 36px;
-    text-align: center;
-    padding: 50px 0;
-}
-.welcome::after {
-    content: "Welcome to the site!";
-    display: block;
-    font-size: 18px;
-    color: #6cbb2b;
-}
-.cv {
-    color: #000000;
-    font-size: 14px;
-    padding: 10px;
-    width: 300px;
-    margin: 0 auto;
-    border: 1px solid #000000;
-    align-items: center;
-    border: 1px solid #000000;
-    margin-top: 20px;
-    background-color: #f0f0f0;
-    border-radius: 5px;
-    text-align: center;
-    font-style: italic;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s ease;
-}
-.profile-pic{
-    width: 100px;
-    height: 100px;
-    border-radius: 50%;
-    margin: 0 auto;
-    display: block;
-    border: 2px solid #000000;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-.nav {
-  list-style-type: none;
+* {
   margin: 0;
   padding: 0;
-  overflow: hidden;
-  background-color: #333;
-  height: 45px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
-.warning {
-    color: #ff0000;
-    font-size: 12px;
-    text-align: right;
+:root {
+  --color: #667dff;
+  --text-primary: #ffffff;
+  --text-secondary: #a0a0a0;
+  --bg-primary: #0a0a0a;
+  --bg-secondary: #1a1a1a;
+  --accent: #00aeac;
+  --border-color: rgba(255, 255, 255, 0.1);
+  --shadow: rgba(0, 0, 0, 0.3);
 }
 
-.nav_li {
-  float: left;
+[data-theme="light"] {
+  --text-primary: #1a1a1a;
+  --text-secondary: #666666;
+  --bg-primary: #ffffff;
+  --bg-secondary: #f8f9fa;
+  --border-color: rgba(0, 0, 0, 0.1);
+  --shadow: rgba(0, 0, 0, 0.1);
 }
 
-.nav_li a {
-  display: block;
-  color: white;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-.nav_li a:hover {
-  background-color: #111;
-}
-
-.active {
-  background-color: #04AA6D;
+body {
+  font-family: "Inter", sans-serif;
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  overflow-x: hidden;
+  line-height: 1.6;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
