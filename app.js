@@ -40,3 +40,46 @@ menuToggle.addEventListener('click', () => {
     document.body.style.overflow = '';
   }
 });
+
+// Loading Animation
+function initLoader() {
+  const loader = document.querySelector('.loader');
+  const loadingText = loader.querySelector('.loading-text');
+  const loaderProgress = loader.querySelector('.loader-progress');
+
+  // Animate the loading text
+  gsap.to(loadingText, {
+    opacity: 1,
+    duration: 0.7,
+    ease: "power2.Out",
+  });
+
+    // Simulate loading bar
+    gsap.to(loaderProgress, {
+      width: '100%',
+      duration: 2,
+      ease: "power2.Out",
+      onComplete: () => {
+        gsap.to(loader, {
+          opacity: 0,
+          duration: 0.7,
+          onComplete: () => {
+            loader.style.display = 'none';
+            initAnimations();
+          }
+        });
+      }
+    });
+}
+
+window.addEventListener('load', initLoader)
+
+function initAnimations() {
+    // Navigation animation
+    gsap.to('nav', {
+      y: 0,
+      opacity: 1,
+      duration: 1,
+      ease: "power3.Out",
+    });
+}
