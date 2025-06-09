@@ -57,7 +57,7 @@ function initLoader() {
     // Simulate loading bar
     gsap.to(loaderProgress, {
       width: '100%',
-      duration: 2,
+      duration: 1.5,
       ease: "power2.Out",
       onComplete: () => {
         gsap.to(loader, {
@@ -71,8 +71,29 @@ function initLoader() {
       }
     });
 }
-
+// Initialize loader on page load
 window.addEventListener('load', initLoader)
+
+// Custom cursor (only for desktop)
+if (window.innerWidth > 768) {
+  const cursor = document.querySelector('.cursor');
+  const cursorFollower = document.querySelector('.cursor-follower');
+
+  document.addEventListener('mousemove', (e) => {
+    gsap.to(cursor, {
+      x: e.clientX - 10,
+      y: e.clientY - 10,
+      duration: 0.1,
+      ease: "power2.out"
+    });
+    gsap.to(cursorFollower, {
+      x: e.clientX - 20,
+      y: e.clientY - 20,
+      duration: 0.2,
+      ease: "power2.out"
+    });
+  });
+}
 
 function initAnimations() {
     // Navigation animation
