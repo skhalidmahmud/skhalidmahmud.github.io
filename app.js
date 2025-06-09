@@ -25,3 +25,18 @@ themeToggle.addEventListener('click', () => {
   });
 });
 
+// Mobile Menu Management
+const menuToggle = document.getElementById('menuToggle');
+const mobileMenu = document.getElementById('mobileMenu');
+
+menuToggle.addEventListener('click', () => {
+  menuToggle.classList.toggle('active');
+  mobileMenu.classList.toggle('active');
+
+  // Prevent body scroll when menu is open
+  if (mobileMenu.classList.contains('active')) {
+    document.body.style.overflow = 'hidden';
+  } else {
+    document.body.style.overflow = '';
+  }
+});
