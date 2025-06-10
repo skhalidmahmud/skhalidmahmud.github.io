@@ -305,3 +305,126 @@ nav {
   transition-delay: 0.5s;
 }
 
+/* Hero section */
+.hero {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero-bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 50% 50%, rgba(0, 102, 255, 0.1), 0%, transparent 50%);
+}
+
+.hero-image {
+  height: 60%;
+  margin-left: 5%;
+  margin-right: 5%;
+}
+
+.hero-content {
+  text-align: center;
+  z-index: 2;
+  max-width: 800px;
+  padding: 0 2rem;
+  /* color: var(--text-primary); */
+}
+
+.hero-title {
+  font-size: clamp(3rem, 8vw, 8rem);
+  font-weight: 700;
+  line-height: 0.9;
+  margin-bottom: 1rem;
+  font-family: 'Flayfair Display', serif;
+  filter: blur(10px);
+  transform: translateY(5rem);
+  opacity: 0;
+}
+
+.hero-subtitle {
+  font-size: clamp(1.2rem, 3vw, 2rem);
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+  filter: blur(10px);
+  transform: translateY(5rem);
+  opacity: 0;
+}
+
+.hero-description {
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+  margin-bottom: 3rem;
+  filter: blur(10px);
+  transform: translateY(5rem);
+  opacity: 0;
+}
+
+.cta-button {
+  display: inline-block;
+  padding: 1rem 2.5rem;
+  background: linear-gradient(135deg, var(--color), var(--accent));
+  color: var(--text-primary);
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: transform 0.3s ease;
+  filter: blur(10px);
+  transform: translateY(5rem);
+  opacity: 0;
+}
+
+.cta-button:hover {
+  transform: translateY(-3px);
+}
+
+.hero-3d-model {
+  position: absolute;
+  left: 23%;
+  top: 10%;
+  width: 600px;
+  height: 600px;
+  z-index: -1;
+}
+
+@media (max-width: 1080px) {
+  .hero-image {
+    height: 38%;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+  }
+  .menu-toggle {
+    display: flex;
+  }
+  .hero-content {
+    padding: 0 1rem;
+  }
+  .nav-container {
+    padding: 0 1rem;
+  }
+  .cursor, .cursor-follower {
+    display: none;
+  }
+  .hero {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .hero-image {
+    height: 30%;
+    margin: 0;
+  }
+  .hero-3d-model{
+    display: none;
+  }
+}

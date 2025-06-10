@@ -103,4 +103,36 @@ function initAnimations() {
       duration: 1,
       ease: "power3.Out",
     });
-}
+
+    // Hero animation
+    const heroT1 = gsap.timeline()
+    heroT1
+        .to('.hero-title', {
+          y: 0,
+          filter: 'blur(0)',
+          opacity: 1,
+          duration: 1.2,
+          ease: "power3.Out",
+        })
+        .to('.hero-subtitle', {
+          y: 0,
+          filter: 'blur(0)',
+          opacity: 1,
+          duration: 0.8,
+          ease: "power3.Out",
+        }, "-=0.5")
+        .to('.hero-description', {
+          y: 0,
+          filter: 'blur(0)',
+          opacity: 1,
+          duration: 0.8,
+          ease: "power3.Out",
+        }, "-=0.3")
+        .to('.cta-button', {
+          y: 0,
+          filter: 'blur(0)',
+          opacity: 1,
+          duration: 0.8,
+          ease: "power3.Out",
+        }, "-=0.3")
+    }
