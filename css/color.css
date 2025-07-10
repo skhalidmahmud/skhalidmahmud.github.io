@@ -285,7 +285,7 @@ footer {
   }
 }
 
-.cursor {
+/* .cursor {
   position: fixed;
   width: 15px;
   height: 15px;
@@ -306,4 +306,4 @@ footer {
   pointer-events: none;
   z-index: 9998;
   transition: transfrorm 0.2s ease;
-}
+} */
