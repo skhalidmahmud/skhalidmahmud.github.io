@@ -28,6 +28,12 @@ h2 {
   color: #60A9F0;
 }
 
+.accenttwo {
+  font-family: 'Proxima';
+  line-height: 14px;
+  color: #60A9F0;
+}
+
 .bold {
 	font-weight: bold;
 }
@@ -49,15 +55,12 @@ h2 {
   color: #fff;
 }
 
-.about,.skills,
-.education,.languages,
-.contact, .experience {
+.about, .skills, .education, .languages, .contact, .experience {
   padding: 40px;
   min-height: 330px;
 }
 
-.education, .languages,
-.contact, .experience {
+.education, .languages, .contact, .experience {
   margin-top: 30px;
 }
 
@@ -197,7 +200,7 @@ header hr {
 /* languages section */
 .languages {
   background: #fff;
- box-shadow: 0px 1px 5px rgba(50,50,50,0.08);
+  box-shadow: 0px 1px 5px rgba(50,50,50,0.08);
 }
 .languages ul {
   padding: 10px;
