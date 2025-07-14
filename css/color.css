@@ -298,6 +298,27 @@ footer {
     color: #333;
 }
 
+/* Target My Skills section specifically */
+.about:has(h3.accent:contains("My Skills")) {
+    background: #3366CC; /* Same as .skills */
+    color: #f5f5f5;      /* Same as .skills */
+}
+.about:has(h3.accent:contains("My Skills")) h2,
+.about:has(h3.accent:contains("My Skills")) h3,
+.about:has(h3.accent:contains("My Skills")) p {
+    color: #f5f5f5;
+}
+
+.myskills {
+    background: #3366CC;
+    color: #f5f5f5;
+}
+.myskills h2,
+.myskills h3,
+.myskills p {
+    color: #f5f5f5;
+}
+
 /* .cursor {
   position: fixed;
   width: 15px;
