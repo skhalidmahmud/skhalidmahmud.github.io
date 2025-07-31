@@ -1,348 +1,1180 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="utf-8">
-		<title>Khalid | AI & Web Developer</title>
-		<meta http-equiv="X-UA-Compatible" content="IE=Edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<meta name="keywords" content="Khalid, MD Khalid Mahmud, skhalidmahmud.github.io, skhalidmahmud, Khalid Mahmud, Khalid, AI & Web Developer, Backend Developer, Profile Page, Personal Profile">
-		<meta name="description" content="Khalid's personal profile page showcasing skills, education, and experience., AI & Web Developer, Backend Developer, MD Khalid Mahmud, skhalidmahmud.github.io, skhalidmahmud, Khalid Mahmud, Khalid, MD Khalid, skhalidmahmud.github.io, linkedin.com/in/skhalidmahmud, github.com/skhalidmahmud, x.com/md_khalidmahmud, facebook.com/skhalidmahmud">
-		<link rel="stylesheet" href="css/bootstrap.min.css">
-		<link rel="stylesheet" href="css/font-awesome.min.css">
-		<link rel="stylesheet" href="css/color.css">
-	</head>
-	<body data-spy="scroll" data-target=".navbar-collapse">
-		<div class="preloader">
-			<div class="sk-spinner sk-spinner-wordpress">
-			<span class="sk-inner-circle"></span>
-			</div>
-		</div>
+<head>
+    <meta charset="utf-8">
+    <title>Khalid | AI & Web Developer</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Khalid, MD Khalid Mahmud, skhalidmahmud.github.io, skhalidmahmud, Khalid Mahmud, Khalid, AI & Web Developer, Backend Developer, Profile Page, Personal Profile">
+    <meta name="description" content="Khalid's personal profile page showcasing skills, education, and experience., AI & Web Developer, Backend Developer, MD Khalid Mahmud, skhalidmahmud.github.io, skhalidmahmud, Khalid Mahmud, Khalid, MD Khalid, skhalidmahmud.github.io, linkedin.com/in/skhalidmahmud, github.com/skhalidmahmud, x.com/md_khalidmahmud, facebook.com/skhalidmahmud">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+    
+    <style>
+        :root {
+            --primary-color: #4361ee;
+            --secondary-color: #3f37c9;
+            --accent-color: #4cc9f0;
+            --text-light: #f8f9fa;
+            --text-dark: #212529;
+            --bg-light: #f8f9fa;
+            --bg-dark: #212529;
+            --card-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            --transition: all 0.3s ease;
+        }
 
-		<!-- <div class="cursor"></div>
-    	<div class="cursor-follower"></div> -->
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-		<header style="height: 100vh; display: flex; align-items: center; justify-content: center;">
-			<div class="container">
-				<div class="row justify-content-center">
-					<div class="col-md-12 col-sm-12 text-center"></div>
-						<img src="https://avatars.githubusercontent.com/u/94211717?v=4" class="img-responsive img-circle tm-border dp" alt="Khalid's GitHub DP">
-						<hr>
-						<h1 class="tm-title bold shadow">Hi, this is MD Khalid Mahmud</h1>
-						<h1 class="white bold shadow">Backend Developer</h1>
-						<p class="white px-5" style="background-color: #55555555;">A passionate backend developer specializing in Django, with expertise in crafting scalable solutions and exploring cutting-edge technologies.</p>
-					</div>
-				</div>
-			</div>
-		</header>
+        body {
+            font-family: 'Poppins', sans-serif;
+            color: var(--text-dark);
+            background-color: var(--bg-light);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
 
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
 
-		<section class="container" style="margin-bottom: 30px;">
-			<div class="row">
-				<div class="col-md-12 col-sm-12">
-					<div class="about">
-						<h3 class="accent">About Me</h3>
-						<h2>My personal journey and professional growth</h2>
-						<p>Welcome to my personal profile page! I am MD Khalid Mahmud, a passionate <b>AI & Web Developer</b> with a focus on <strong class="accenttwo">backend</strong> and <strong class="accenttwo">DevOps</strong> development. My journey in the tech world has been driven by a love for coding and a desire to create impactful solutions.</p>
-						<p>With a strong foundation in programming languages - <strong class="accenttwo">JavaScript, Python</strong> and frameworks - <strong class="accenttwo">Node.js, Django</strong>, I specialize in building robust and scalable backend systems. My expertise includes working with databases, APIs, and server-side technologies to deliver seamless user experiences.</p>
-						<p>Beyond my technical skills, I am committed to continuous learning and staying updated with the latest industry trends. I believe in the power of collaboration and enjoy working with teams to bring innovative ideas to life.</p>
-						<p>Feel free to explore my projects and connect with me on social media platforms. I am always open to new opportunities and collaborations in the field of AI and web development.</p>
-					</div>
-				</div>
-			</div>
-		</section>
+        .accent {
+            color: var(--primary-color);
+        }
 
-		<section class="container" style="margin-bottom: 30px;">
-			<div class="row">
-				<div class="col-md-12 col-sm-12">
-					<div class="about myskills">
-						<h3 class="accent">My Skills</h3><br>
-						<div class="row">
-							<div class="col-md-6 col-sm-12 mb-3">
-								<div class="card skill-card h-100">
-									<div class="card-body">
-										<h2 class="card-title">Programming & Development</h2>
-										<p class="card-text">C, C#, Python, JavaScript, RestAPI, FastAPI</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 col-sm-12 mb-3">
-								<div class="card skill-card h-100">
-									<div class="card-body">
-										<h2 class="card-title">Backend Development</h2>
-										<p class="card-text">Django, RESTful APIs, .NET</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 col-sm-12 mb-3">
-								<div class="card skill-card h-100">
-									<div class="card-body">
-										<h2 class="card-title">DevOps & Cloud</h2>
-										<p class="card-text">Docker, Kubernetes, Terraform, CI/CD, Cloud Platforms</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 col-sm-12 mb-3">
-								<div class="card skill-card h-100">
-									<div class="card-body">
-										<h2 class="card-title">Machine Learning & AI</h2>
-										<p class="card-text">Deep Learning, AI Applications, Large Language Models (LLMs)</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 col-sm-12 mb-3">
-								<div class="card skill-card h-100">
-									<div class="card-body">
-										<h2 class="card-title">Development Tools</h2>
-										<p class="card-text">Git, Visual Studio Code, Monitoring Tools</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 col-sm-12 mb-3">
-								<div class="card skill-card h-100">
-									<div class="card-body">
-										<h2 class="card-title">Soft Skills</h2>
-										<p class="card-text">Teamwork, Communication, Problem Solving, Adaptability</p>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+        .accenttwo {
+            color: var(--accent-color);
+        }
 
-		<section class="container projects-section" style="margin-bottom: 30px;">
-			<div class="row">
-				<div class="col-md-12 col-sm-12">
-					<div class="about">
-						<h3 class="accent">Projects</h3>
-						<h2>Professional Projects</h2>
-						<div class="row">
-							<div class="col-md-6 col-sm-12 mb-3">
-								<div class="card skill-card h-100">
-									<div class="card-body">
-										<h2 class="card-title">Programming & Development</h2>
-										<p class="card-text">C, C#, Python, JavaScript, RestAPI, FastAPI</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 col-sm-12 mb-3">
-								<div class="card skill-card h-100">
-									<div class="card-body">
-										<h2 class="card-title">Backend Development</h2>
-										<p class="card-text">Django, RESTful APIs, .NET</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<h2>Research Projects</h2>
-						<div class="row">
-							<div class="col-md-6 col-sm-12 mb-3">
-								<div class="card skill-card h-100">
-									<div class="card-body">
-										<h2 class="card-title">Programming & Development</h2>
-										<p class="card-text">C, C#, Python, JavaScript, RestAPI, FastAPI</p>
-									</div>
-								</div>
-							</div>
-							<div class="col-md-6 col-sm-12 mb-3">
-								<div class="card skill-card h-100">
-									<div class="card-body">
-										<h2 class="card-title">Backend Development</h2>
-										<p class="card-text">Django, RESTful APIs, .NET</p>
-									</div>
-								</div>
-							</div>
-						</div>
-						<h2>Academic Projects</h2>
-						<div class="row">
-							<div class="col-md-6 col-sm-12 mb-3">
-								<a href="https://github.com/skhalidmahmud/Online-Voting-System">
-								<div class="card skill-card h-100">
-									<div class="card-body">
-										<h2 class="card-title">Online Voting System</h2>
-										<p class="card-text">A software solution for tracking and managing voting activities efficiently.</p>
-									</div>
-								</div>
-								</a>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+        /* Preloader */
+        .preloader {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #fff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+            transition: opacity 0.5s, visibility 0.5s;
+        }
 
+        .preloader.hidden {
+            opacity: 0;
+            visibility: hidden;
+        }
 
-		<section class="container">
-			<div class="row">				
-				<div class="col-md-6 col-sm-12">
-					<div class="languages">
-						<h2>Languages</h2>
-						<ul>
-							<li>English / English</li>
-								<span class="pull-right">80%</span>
-								<div class="progress">
-									<div class="progress-bar progress-bar-primary" role="progressbar" 
-									aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
-								</div>
-							<li>Bangla / Bengali</li>
-								<span class="pull-right">95%</span>
-							<div class="progress">
-								<div class="progress-bar progress-bar-primary" role="progressbar" 
-								aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%;"></div>
-							</div>
-						</ul>
-					</div>
-				</div>
-				<div class="col-md-6 col-sm-12">
-					<div class="skills">
-						<h2 class="white">Skills</h2>
-						<strong>Django | Python</strong>
-						<span class="pull-right">90%</span>
-							<div class="progress">
-								<div class="progress-bar progress-bar-primary" role="progressbar" 
-								aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
-							</div>
-						<strong>Django-RestAPI</strong>
-						<span class="pull-right">50%</span>
-							<div class="progress">
-								<div class="progress-bar progress-bar-primary" role="progressbar" 
-								aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;"></div>
-							</div>
-						<strong>UI/UX Design</strong>
-						<span class="pull-right">85%</span>
-							<div class="progress">
-								<div class="progress-bar progress-bar-primary" role="progressbar" 
-								aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%;"></div>
-							</div>
-						<strong>Bootstrap</strong>
-						<span class="pull-right">70%</span>
-							<div class="progress">
-								<div class="progress-bar progress-bar-primary" role="progressbar" 
-								aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div>
-							</div>
-					</div>
-				</div>
-			</div>
-		</section>
+        .sk-spinner {
+            width: 50px;
+            height: 50px;
+            border: 5px solid rgba(0, 0, 0, 0.1);
+            border-radius: 50%;
+            border-top-color: var(--primary-color);
+            animation: spin 1s ease-in-out infinite;
+        }
 
-		<!-- education and languages -->
-		<section class="container">
-			<div class="row">
-				<div class="col-md-12 col-sm-12">
-					<div class="education">
-						<h2 class="white">Education</h2>
-						<div class="education-content">
-							<h4 class="education-title accent">European University of Bangladesh</h4>
-								<div class="education-school">
-									<h5>BSc in CSE, Computer Science</h5><span></span>
-									<h5>Sep 2019 - Dec 2023</h5>
-									<h5>CGPA: 3.66</h5>
-								</div>
-							<p class="education-description">Skills: English · Strategy · Computer Science · Presentations · Soft Skills · Relationship Building · HTML5 · Team Management · Problem Solving · Learning · Microsoft PowerPoint · Artificial Intelligence (AI) · Teamwork · Microsoft Word · Laptops · Easily Adaptable · Microsoft Office · Machine Learning Algorithms · Pattern Recognition · CSE · Time Management · Critical Thinking · Python (Programming Language) · Computer Engineering · Cascading Style Sheets (CSS) · Git · Machine Learning · C++ · Leadership · Microsoft Excel · Gender Equality · Data Science · Creative Problem Solving</p>
-						</div>
-						<div class="education-content">
-							<h4 class="education-title accent">Pangsha Govt College</h4>
-								<div class="education-school">
-									<h5>HSC, Science</h5><span></span>
-									<h5>March 2017 - April 2019</h5><br>
-									<h5>GPA: 3.09</h5>
-								</div>
-							<p class="education-description">Skills: Learning</p>
-						</div>
-						<div class="education-content">
-							<h4 class="education-title accent">Kazi Abdul Majed Academy</h4>
-								<div class="education-school">
-									<h5>SSC, Science</h5><span></span>
-									<h5>Jan 2015 - Feb 2017</h5><br>
-									<h5>GPA: 5.00</h5>
-								</div>
-							<p class="education-description">Skills: Learning</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
 
-		<!-- contact and experience -->
-		<section class="container" style="align-items: center; justify-content: center; text-align: center;">
-			<div class="row">
-				<div class="col-md-12 col-sm-12">
-					<div class="contact">
-						<h2>Contact</h2>
-							<p><i class="fa fa-map-marker"></i> Ashroy, 176/A/1, North Shyamoli, Road No: 2, Dhaka-1207</p>
-							<p><i class="fa fa-phone"></i> +880-1403-001026</p>
-							<p><i class="fa fa-envelope"></i> skhalidmahmud1@gmail.com</p>
-							<p><i class="fa fa-globe"></i> skhalidmahmud.github.io</p>
-					</div>
-				</div>
-			</div>
-		</section>
+        /* Header Section */
+        header {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: linear-gradient(135deg, var(--secondary-color), var(--primary-color));
+            color: var(--text-light);
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
 
-		<section class="container">
-			<div class="row">
-				<div class="col-md-12 col-sm-12">
-					<div class="experience">
-						<h2 class="white">Experiences</h2>
-							<div class="experience-content">
-								<h4 class="experience-title accent">BD MOTION STUDIO</h4>
-								<h5>IT and Content Creator (Remote and Hybrid)</h5><br>
-								<strong>IT Support and Executive Editor</strong><br>
-								<h5>March 2024 – March 2025</h5>
-								<p class="education-description">Key Responsibilities <br>
-									<span>- Provided technical support for content creation and IT operations.</span><br>
-									<span>- Edited and managed multimedia content across platforms.</span><br>
-									<span>- Collaborated with teams to streamline production.</span></p>
-							</div>
-							<div class="experience-content">
-								<h4 class="experience-title accent">MM Corporation & Engineers</h4>
-								<h5>SAQ</h5><br>
-								<strong>Sr. SAQ Executive Officer</strong><br>
-								<h5>September 2023 - February 2024</h5>
-								<p class="education-description">Key Responsibilities <br>
-									<span>- Managed site acquisition operations and documentation.</span><br>
-									<span>- Streamlined processes, reducing project delays.</span><br>
-									<span>- Assisted in strategic decision-making and report preparation.</span></p>
-							</div>
-							<div class="experience-content">
-								<h4 class="experience-title accent">M/S Riaj Enterprise</h4>
-								<h5>SAQ</h5><br>
-								<strong>SAQ Executive | Project Manager</strong><br>
-								<h5>September 2022 - August 2023</h5>
-								<p class="education-description">Key Responsibilities <br>
-									<span>- Led and managed SAQ (Site Acquisition) projects.</span><br>
-									<span>- Coordinated with stakeholders to improve efficiency.</span><br>
-									<span>- Supervised a team to optimize workflow.</span></p>
-							</div>
-					</div>
-				</div>
-			</div>
-		</section>
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&auto=format&fit=crop&w=1470&q=80');
+            background-size: cover;
+            background-position: center;
+            opacity: 0.2;
+            z-index: 0;
+        }
 
-		<!-- footer section -->
-		<footer>
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12 col-sm-12">
-						<p>Copyright &copy; 2025 | MD Khalid Mahmud</p>
-						<ul class="social-icons">
-							<li><a href="https://www.facebook.com/skhalidmahmud" class="fa fa-facebook"></a></li>
-							<li><a href="https://x.com/md_khalidmahmud" class="fa fa-twitter"></a></li>
-							<li><a href="https://github.com/skhalidmahmud" class="fa fa-github"></a></li>
-							<li><a href="https://www.linkedin.com/in/skhalidmahmud" class="fa fa-linkedin"></a></li>
-						</ul>
-					</div>
-				</div>
-			</div>
-		</footer>
+        .header-content {
+            position: relative;
+            z-index: 1;
+            padding: 2rem;
+        }
 
-		<script src="js/jquery.js"></script>
-		<script src="js/bootstrap.min.js"></script>	
-		<script src="js/jquery.backstretch.min.js"></script>
-		<script src="js/custom.js"></script>
-		<!-- <iframe src="https://drive.google.com/file/d/1i0vxOY6jf4OBcMANNOSrJ3lldz-IjwVx/preview" width="640" height="480" allow="autoplay"></iframe> -->
-		<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script> -->
+        .dp {
+            width: 180px;
+            height: 180px;
+            border: 5px solid var(--accent-color);
+            box-shadow: 0 0 20px rgba(76, 201, 240, 0.5);
+            margin-bottom: 1.5rem;
+            transition: var(--transition);
+        }
 
-	</body>
+        .dp:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 30px rgba(76, 201, 240, 0.8);
+        }
+
+        .tm-title {
+            font-size: 3.5rem;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .white {
+            color: var(--text-light);
+        }
+
+        .bold {
+            font-weight: 700;
+        }
+
+        .shadow {
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+
+        .header-subtitle {
+            font-size: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .header-description {
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto;
+            padding: 1rem;
+            background-color: rgba(0, 0, 0, 0.3);
+            border-radius: 10px;
+            backdrop-filter: blur(5px);
+        }
+
+        /* Section Styling */
+        section {
+            padding: 5rem 0;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 3rem;
+        }
+
+        .section-title h2 {
+            font-size: 2.5rem;
+            position: relative;
+            display: inline-block;
+            padding-bottom: 0.5rem;
+        }
+
+        .section-title h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background-color: var(--primary-color);
+            border-radius: 2px;
+        }
+
+        /* About Section */
+        .about {
+            background-color: white;
+            border-radius: 15px;
+            padding: 2.5rem;
+            box-shadow: var(--card-shadow);
+            margin-bottom: 2rem;
+            transition: var(--transition);
+        }
+
+        .about:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+        }
+
+        .about h3 {
+            font-size: 1.8rem;
+            margin-bottom: 0.5rem;
+            position: relative;
+            display: inline-block;
+        }
+
+        .about h3::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background-color: var(--accent-color);
+            border-radius: 2px;
+        }
+
+        .about p {
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        /* Skills Section */
+        .skill-card {
+            background-color: white;
+            border-radius: 15px;
+            padding: 1.5rem;
+            box-shadow: var(--card-shadow);
+            height: 100%;
+            transition: var(--transition);
+            border-left: 4px solid var(--primary-color);
+        }
+
+        .skill-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+        }
+
+        .skill-card h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        .skill-card p {
+            font-size: 1rem;
+            margin-bottom: 0;
+        }
+
+        /* Projects Section */
+        .projects-section {
+            background-color: #f0f2f5;
+        }
+
+        .project-card {
+            background-color: white;
+            border-radius: 15px;
+            padding: 1.5rem;
+            box-shadow: var(--card-shadow);
+            height: 100%;
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+        }
+
+        .project-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+        }
+
+        .project-card h2 {
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            color: var(--primary-color);
+        }
+
+        .project-card p {
+            font-size: 1rem;
+            margin-bottom: 0;
+        }
+
+        /* Languages and Skills Section */
+        .languages, .skills {
+            background-color: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: var(--card-shadow);
+            margin-bottom: 2rem;
+            transition: var(--transition);
+        }
+
+        .languages:hover, .skills:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+        }
+
+        .languages h2, .skills h2 {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+            display: inline-block;
+        }
+
+        .languages h2::after, .skills h2::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background-color: var(--accent-color);
+            border-radius: 2px;
+        }
+
+        .languages ul, .skills ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .languages li, .skills li {
+            margin-bottom: 1.5rem;
+        }
+
+        .progress {
+            height: 10px;
+            border-radius: 5px;
+            background-color: #e9ecef;
+            margin-top: 0.5rem;
+        }
+
+        .progress-bar {
+            border-radius: 5px;
+            background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+        }
+
+        /* Education Section */
+        .education {
+            background-color: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: var(--card-shadow);
+            margin-bottom: 2rem;
+            transition: var(--transition);
+        }
+
+        .education:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+        }
+
+        .education h2 {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+            display: inline-block;
+        }
+
+        .education h2::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background-color: var(--accent-color);
+            border-radius: 2px;
+        }
+
+        .education-content {
+            margin-bottom: 2rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid #e9ecef;
+        }
+
+        .education-content:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+
+        .education-title {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: var(--primary-color);
+        }
+
+        .education-school {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            margin-bottom: 1rem;
+        }
+
+        .education-school h5 {
+            margin: 0;
+            font-weight: 500;
+        }
+
+        .education-description {
+            font-size: 1rem;
+            margin: 0;
+        }
+
+        .education-description span {
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Experience Section */
+        .experience {
+            background-color: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: var(--card-shadow);
+            margin-bottom: 2rem;
+            transition: var(--transition);
+        }
+
+        .experience:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+        }
+
+        .experience h2 {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+            display: inline-block;
+        }
+
+        .experience h2::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background-color: var(--accent-color);
+            border-radius: 2px;
+        }
+
+        .experience-content {
+            margin-bottom: 2rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid #e9ecef;
+        }
+
+        .experience-content:last-child {
+            margin-bottom: 0;
+            padding-bottom: 0;
+            border-bottom: none;
+        }
+
+        .experience-title {
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+            color: var(--primary-color);
+        }
+
+        .experience-description {
+            font-size: 1rem;
+            margin: 0;
+        }
+
+        .experience-description span {
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Certificates Section */
+        .certificates-section {
+            background-color: #f0f2f5;
+        }
+
+        .certificate-card {
+            background-color: white;
+            border-radius: 15px;
+            padding: 1.5rem;
+            box-shadow: var(--card-shadow);
+            height: 100%;
+            transition: var(--transition);
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .certificate-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+        }
+
+        .certificate-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 5px;
+            background: linear-gradient(90deg, var(--primary-color), var(--accent-color));
+        }
+
+        .certificate-icon {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 1rem;
+        }
+
+        .certificate-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+            color: var(--primary-color);
+        }
+
+        .certificate-card h4 {
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+            color: var(--secondary-color);
+        }
+
+        .certificate-card p {
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+            flex-grow: 1;
+        }
+
+        .certificate-date {
+            font-size: 0.85rem;
+            color: #6c757d;
+            margin-bottom: 1rem;
+        }
+
+        .certificate-link {
+            display: inline-block;
+            color: var(--primary-color);
+            font-weight: 500;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .certificate-link:hover {
+            color: var(--secondary-color);
+        }
+
+        /* Contact Section */
+        .contact {
+            background-color: white;
+            border-radius: 15px;
+            padding: 2rem;
+            box-shadow: var(--card-shadow);
+            margin-bottom: 2rem;
+            transition: var(--transition);
+        }
+
+        .contact:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+        }
+
+        .contact h2 {
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            position: relative;
+            display: inline-block;
+        }
+
+        .contact h2::after {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 50px;
+            height: 3px;
+            background-color: var(--accent-color);
+            border-radius: 2px;
+        }
+
+        .contact p {
+            margin-bottom: 1rem;
+            font-size: 1.1rem;
+        }
+
+        .contact i {
+            color: var(--primary-color);
+            margin-right: 0.5rem;
+            width: 20px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--bg-dark);
+            color: var(--text-light);
+            padding: 3rem 0 1.5rem;
+            text-align: center;
+        }
+
+        footer p {
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+
+        .social-icons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .social-icons li a {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            background-color: rgba(255, 255, 255, 0.1);
+            color: var(--text-light);
+            font-size: 1.2rem;
+            transition: var(--transition);
+        }
+
+        .social-icons li a:hover {
+            background-color: var(--primary-color);
+            transform: translateY(-3px);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .tm-title {
+                font-size: 2.5rem;
+            }
+            
+            .header-subtitle {
+                font-size: 1.5rem;
+            }
+            
+            .header-description {
+                font-size: 1rem;
+                padding: 0.8rem;
+            }
+            
+            .section-title h2 {
+                font-size: 2rem;
+            }
+            
+            .skill-card, .project-card, .about, .languages, .skills, .education, .contact, .experience, .certificate-card {
+                padding: 1.5rem;
+                margin-bottom: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body data-spy="scroll" data-target=".navbar-collapse">
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="sk-spinner"></div>
+    </div>
+
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-12 col-sm-12 text-center">
+                    <div class="header-content">
+                        <img src="https://avatars.githubusercontent.com/u/94211717?v=4" class="img-responsive img-circle dp" alt="Khalid's GitHub DP">
+                        <h1 class="tm-title bold shadow">Hi, this is MD Khalid Mahmud</h1>
+                        <h1 class="white bold shadow header-subtitle">Backend Developer</h1>
+                        <p class="white px-5 header-description">A passionate backend developer specializing in Django, with expertise in crafting scalable solutions and exploring cutting-edge technologies.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12">
+                <div class="about">
+                    <h3 class="accent">About Me</h3>
+                    <h2>My personal journey and professional growth</h2>
+                    <p>Welcome to my personal profile page! I am MD Khalid Mahmud, a passionate <b>AI & Web Developer</b> with a focus on <strong class="accenttwo">backend</strong> and <strong class="accenttwo">DevOps</strong> development. My journey in the tech world has been driven by a love for coding and a desire to create impactful solutions.</p>
+                    <p>With a strong foundation in programming languages - <strong class="accenttwo">JavaScript, Python</strong> and frameworks - <strong class="accenttwo">Node.js, Django</strong>, I specialize in building robust and scalable backend systems. My expertise includes working with databases, APIs, and server-side technologies to deliver seamless user experiences.</p>
+                    <p>Beyond my technical skills, I am committed to continuous learning and staying updated with the latest industry trends. I believe in the power of collaboration and enjoy working with teams to bring innovative ideas to life.</p>
+                    <p>Feel free to explore my projects and connect with me on social media platforms. I am always open to new opportunities and collaborations in the field of AI and web development.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12">
+                <div class="section-title">
+                    <h3 class="accent">My Skills</h3>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-sm-12 mb-4">
+                <div class="skill-card">
+                    <div class="card-body">
+                        <h2 class="card-title">Programming & Development</h2>
+                        <p class="card-text">C, C#, Python, JavaScript, RestAPI, FastAPI</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12 mb-4">
+                <div class="skill-card">
+                    <div class="card-body">
+                        <h2 class="card-title">Backend Development</h2>
+                        <p class="card-text">Django, RESTful APIs, .NET</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12 mb-4">
+                <div class="skill-card">
+                    <div class="card-body">
+                        <h2 class="card-title">DevOps & Cloud</h2>
+                        <p class="card-text">Docker, Kubernetes, Terraform, CI/CD, Cloud Platforms</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12 mb-4">
+                <div class="skill-card">
+                    <div class="card-body">
+                        <h2 class="card-title">Machine Learning & AI</h2>
+                        <p class="card-text">Deep Learning, AI Applications, Large Language Models (LLMs)</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12 mb-4">
+                <div class="skill-card">
+                    <div class="card-body">
+                        <h2 class="card-title">Development Tools</h2>
+                        <p class="card-text">Git, Visual Studio Code, Monitoring Tools</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12 mb-4">
+                <div class="skill-card">
+                    <div class="card-body">
+                        <h2 class="card-title">Soft Skills</h2>
+                        <p class="card-text">Teamwork, Communication, Problem Solving, Adaptability</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section class="container projects-section">
+        <div class="row">
+            <div class="col-md-12 col-sm-12">
+                <div class="section-title">
+                    <h3 class="accent">Projects</h3>
+                    <h2>Professional Projects</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-sm-12 mb-4">
+                <div class="project-card">
+                    <div class="card-body">
+                        <h2 class="card-title">Programming & Development</h2>
+                        <p class="card-text">C, C#, Python, JavaScript, RestAPI, FastAPI</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12 mb-4">
+                <div class="project-card">
+                    <div class="card-body">
+                        <h2 class="card-title">Backend Development</h2>
+                        <p class="card-text">Django, RESTful APIs, .NET</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-12 col-sm-12">
+                <h2>Research Projects</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-sm-12 mb-4">
+                <div class="project-card">
+                    <div class="card-body">
+                        <h2 class="card-title">Programming & Development</h2>
+                        <p class="card-text">C, C#, Python, JavaScript, RestAPI, FastAPI</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12 mb-4">
+                <div class="project-card">
+                    <div class="card-body">
+                        <h2 class="card-title">Backend Development</h2>
+                        <p class="card-text">Django, RESTful APIs, .NET</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row mt-4">
+            <div class="col-md-12 col-sm-12">
+                <h2>Academic Projects</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-sm-12 mb-4">
+                <a href="https://github.com/skhalidmahmud/Online-Voting-System" class="text-decoration-none">
+                    <div class="project-card">
+                        <div class="card-body">
+                            <h2 class="card-title">Online Voting System</h2>
+                            <p class="card-text">A software solution for tracking and managing voting activities efficiently.</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Languages and Skills Section -->
+    <section class="container">
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <div class="languages">
+                    <h2>Languages</h2>
+                    <ul>
+                        <li>English / English
+                            <div class="d-flex justify-content-between">
+                                <span>Proficiency</span>
+                                <span>80%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-primary" role="progressbar" 
+                                aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%;"></div>
+                            </div>
+                        </li>
+                        <li>Bangla / Bengali
+                            <div class="d-flex justify-content-between">
+                                <span>Proficiency</span>
+                                <span>95%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-primary" role="progressbar" 
+                                aria-valuenow="95" aria-valuemin="0" aria-valuemax="100" style="width: 95%;"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <div class="skills">
+                    <h2 >Technical Skills</h2>
+                    <ul>
+                        <li>
+                            <div class="d-flex justify-content-between">
+                                <strong>Django | Python</strong>
+                                <span>90%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-primary" role="progressbar" 
+                                aria-valuenow="90" aria-valuemin="0" aria-valuemax="100" style="width: 90%;"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="d-flex justify-content-between">
+                                <strong>Django-RestAPI</strong>
+                                <span>50%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-primary" role="progressbar" 
+                                aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%;"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="d-flex justify-content-between">
+                                <strong>UI/UX Design</strong>
+                                <span>85%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-primary" role="progressbar" 
+                                aria-valuenow="85" aria-valuemin="0" aria-valuemax="100" style="width: 85%;"></div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="d-flex justify-content-between">
+                                <strong>Bootstrap</strong>
+                                <span>70%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar progress-bar-primary" role="progressbar" 
+                                aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%;"></div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12">
+                <div class="education">
+                    <h2 >Education</h2>
+                    <div class="education-content">
+                        <h4 class="education-title accent">European University of Bangladesh</h4>
+                        <div class="education-school">
+                            <h5>BSc in CSE, Computer Science</h5>
+                            <h5>Sep 2019 - Dec 2023</h5>
+                            <h5>CGPA: 3.66</h5>
+                        </div>
+                        <p class="education-description">Skills: English · Strategy · Computer Science · Presentations · Soft Skills · Relationship Building · HTML5 · Team Management · Problem Solving · Learning · Microsoft PowerPoint · Artificial Intelligence (AI) · Teamwork · Microsoft Word · Laptops · Easily Adaptable · Microsoft Office · Machine Learning Algorithms · Pattern Recognition · CSE · Time Management · Critical Thinking · Python (Programming Language) · Computer Engineering · Cascading Style Sheets (CSS) · Git · Machine Learning · C++ · Leadership · Microsoft Excel · Gender Equality · Data Science · Creative Problem Solving</p>
+                    </div>
+                    <div class="education-content">
+                        <h4 class="education-title accent">Pangsha Govt College</h4>
+                        <div class="education-school">
+                            <h5>HSC, Science</h5>
+                            <h5>March 2017 - April 2019</h5>
+                            <h5>GPA: 3.09</h5>
+                        </div>
+                        <p class="education-description">Skills: Learning</p>
+                    </div>
+                    <div class="education-content">
+                        <h4 class="education-title accent">Kazi Abdul Majed Academy</h4>
+                        <div class="education-school">
+                            <h5>SSC, Science</h5>
+                            <h5>Jan 2015 - Feb 2017</h5>
+                            <h5>GPA: 5.00</h5>
+                        </div>
+                        <p class="education-description">Skills: Learning</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12">
+                <div class="experience">
+                    <h2 >Experiences</h2>
+                    <div class="experience-content">
+                        <h4 class="experience-title accent">BD MOTION STUDIO</h4>
+                        <h5>IT and Content Creator (Remote and Hybrid)</h5>
+                        <strong>IT Support and Executive Editor</strong>
+                        <h5>March 2024 – March 2025</h5>
+                        <p class="experience-description">Key Responsibilities <br>
+                            <span>- Provided technical support for content creation and IT operations.</span>
+                            <span>- Edited and managed multimedia content across platforms.</span>
+                            <span>- Collaborated with teams to streamline production.</span></p>
+                    </div>
+                    <div class="experience-content">
+                        <h4 class="experience-title accent">MM Corporation & Engineers</h4>
+                        <h5>SAQ</h5>
+                        <strong>Sr. SAQ Executive Officer</strong>
+                        <h5>September 2023 - February 2024</h5>
+                        <p class="experience-description">Key Responsibilities <br>
+                            <span>- Managed site acquisition operations and documentation.</span>
+                            <span>- Streamlined processes, reducing project delays.</span>
+                            <span>- Assisted in strategic decision-making and report preparation.</span></p>
+                    </div>
+                    <div class="experience-content">
+                        <h4 class="experience-title accent">M/S Riaj Enterprise</h4>
+                        <h5>SAQ</h5>
+                        <strong>SAQ Executive | Project Manager</strong>
+                        <h5>September 2022 - August 2023</h5>
+                        <p class="experience-description">Key Responsibilities <br>
+                            <span>- Led and managed SAQ (Site Acquisition) projects.</span>
+                            <span>- Coordinated with stakeholders to improve efficiency.</span>
+                            <span>- Supervised a team to optimize workflow.</span></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section class="container certificates-section">
+        <div class="row">
+            <div class="col-md-12 col-sm-12">
+                <div class="section-title">
+                    <h3 class="accent">Certificates</h3>
+                    <h2>Professional Certifications</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4 col-sm-12 mb-4">
+                <div class="certificate-card">
+                    <div class="certificate-icon">
+                        <i class="fas fa-certificate"></i>
+                    </div>
+                    <h3>Career Essentials in Software Development</h3>
+                    <h4>Microsoft</h4>
+                    <p>Comprehensive course covering fundamental concepts and best practices in software development.</p>
+                    <div class="certificate-date">Issued: May 2023</div>
+                    <a href="#" class="certificate-link">View Certificate <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12 mb-4">
+                <div class="certificate-card">
+                    <div class="certificate-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Introduction to Career Skills in Software Development</h3>
+                    <h4>LinkedIn</h4>
+                    <p>Essential skills and knowledge required for a successful career in software development.</p>
+                    <div class="certificate-date">Issued: April 2023</div>
+                    <a href="#" class="certificate-link">View Certificate <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12 mb-4">
+                <div class="certificate-card">
+                    <div class="certificate-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Machine Learning Fundamentals</h3>
+                    <h4>Coursera</h4>
+                    <p>Foundational concepts and techniques in machine learning and artificial intelligence.</p>
+                    <div class="certificate-date">Issued: March 2023</div>
+                    <a href="#" class="certificate-link">View Certificate <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12 mb-4">
+                <div class="certificate-card">
+                    <div class="certificate-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>AWS Cloud Practitioner</h3>
+                    <h4>Amazon Web Services</h4>
+                    <p>Fundamental understanding of AWS Cloud services and basic cloud architecture.</p>
+                    <div class="certificate-date">Issued: February 2023</div>
+                    <a href="#" class="certificate-link">View Certificate <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12 mb-4">
+                <div class="certificate-card">
+                    <div class="certificate-icon">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h3>Cybersecurity Fundamentals</h3>
+                    <h4>Cisco</h4>
+                    <p>Essential cybersecurity concepts and best practices for protecting digital assets.</p>
+                    <div class="certificate-date">Issued: January 2023</div>
+                    <a href="#" class="certificate-link">View Certificate <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12 mb-4">
+                <div class="certificate-card">
+                    <div class="certificate-icon">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>Database Management</h3>
+                    <h4>Oracle</h4>
+                    <p>Comprehensive knowledge of database design, implementation, and management.</p>
+                    <div class="certificate-date">Issued: December 2022</div>
+                    <a href="#" class="certificate-link">View Certificate <i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="container">
+        <div class="row">
+            <div class="col-md-12 col-sm-12">
+                <div class="contact">
+                    <h2>Contact</h2>
+                    <p><i class="fas fa-map-marker-alt"></i> Ashroy, 176/A/1, North Shyamoli, Road No: 2, Dhaka-1207</p>
+                    <p><i class="fas fa-phone"></i> +880-1403-001026</p>
+                    <p><i class="fas fa-envelope"></i> skhalidmahmud1@gmail.com</p>
+                    <p><i class="fas fa-globe"></i> skhalidmahmud.github.io</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <p>Copyright &copy; 2025 | MD Khalid Mahmud</p>
+                    <ul class="social-icons">
+                        <li><a href="https://www.facebook.com/skhalidmahmud" class="fab fa-facebook-f"></a></li>
+                        <li><a href="https://x.com/md_khalidmahmud" class="fab fa-twitter"></a></li>
+                        <li><a href="https://github.com/skhalidmahmud" class="fab fa-github"></a></li>
+                        <li><a href="https://www.linkedin.com/in/skhalidmahmud" class="fab fa-linkedin-in"></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-backstretch/2.1.18/jquery.backstretch.min.js"></script>
+    
+    <script>
+        // Preloader
+        window.addEventListener('load', function() {
+            const preloader = document.querySelector('.preloader');
+            preloader.classList.add('hidden');
+            
+            // Remove preloader from DOM after animation completes
+            setTimeout(() => {
+                preloader.style.display = 'none';
+            }, 500);
+        });
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Add animation to elements when they come into view
+        const observerOptions = {
+            root: null,
+            rootMargin: '0px',
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = 1;
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, observerOptions);
+
+        // Observe all sections
+        document.querySelectorAll('section').forEach(section => {
+            section.style.opacity = 0;
+            section.style.transform = 'translateY(20px)';
+            section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+            observer.observe(section);
+        });
+    </script>
+</body>
 </html>
